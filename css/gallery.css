@@ -1,0 +1,503 @@
+/*** Basic styling ***/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn.btn-light:hover {
+    box-shadow: inset 300px 0 0 0 var(--bs-primary);
+    color: var(--bs-light) !important;
+}
+
+.btn-hover {
+    transition: 0.5s;
+}
+
+.btn-hover:hover {
+    color: var(--bs-secondary) !important;
+}
+
+/*** Navbar ***/
+.navbar-light .navbar-nav .nav-link {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    margin-right: 25px;
+    padding: 35px 0;
+    color: var(--bs-dark) !important;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 0;
+    color: var(--dark) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #D98BB0 !important;
+}
+
+.navbar-light .navbar-brand img {
+    max-height: 70px;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        border-radius: 10px;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light) !important;
+    transition: .5s;
+    opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-light {
+        position: relative;
+        background: var(--bs-white);
+    }
+
+    .navbar.navbar-expand-lg .navbar-toggler {
+        padding: 10px 20px;
+        border: 1px solid var(--bs-dark);
+        color: var(--bs-dark);
+    }
+
+    .navbar-light .navbar-collapse {
+        margin-top: 15px;
+        border-top: 1px solid #DDDDDD;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+        margin-left: 0;
+        color: var(--bs-dark) !important;
+    }
+
+    .navbar-light .navbar-brand img {
+        max-height: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-light {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        z-index: 999;
+    }
+    
+    .sticky-top.navbar-light {
+        position: fixed;
+        background: var(--bs-light) !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        background: #D98BB0;
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: calc(100% - 2px);
+        left: 1px;
+    }
+
+    .navbar-light .navbar-nav .nav-link.nav-contact::before {
+        display: none;
+    }
+}
+
+/*** Navbar END***/
+
+
+/*** Gallery Top***/
+.landing_section {
+    background-image: url(../img/bg-gallary.png);
+    margin-top: -20px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing_section h1{
+    font-family: "Aclonica", sans-serif;
+    color: white;
+}
+
+.landing_section p {
+    font-family: "Bonheur Royale", cursive;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.row-cols-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: -70px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.gambar img {
+    border: 8px solid white;
+}
+
+.content-img {
+    margin-right: 100px;
+}
+
+/*** Gallery Top END***/
+
+/*** Gallery Text***/
+.row-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-bottom: 3px;
+}
+
+.row-text .icon {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.row-text p {
+    width: 800px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #1A1618;
+    
+}
+
+.row-text p a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #D1373F;
+    
+}
+
+.row-text p a:hover {
+    color: #d88d91;
+}
+
+.row-text .icon-line {
+    width: 350px;
+    margin-bottom: 10px;
+}
+/*** Gallery Text End***/
+
+/*** Gallery Wediing Start***/
+
+.row-img {
+    display: grid;
+    place-items: center;
+}
+
+.wedding-grid {
+    --gap: 10px;
+    --num-cols: 3;
+    --row-height: auto;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    align-self: start;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.wedding-grid > img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.wedding1-grid {
+    grid-column: span 4;
+    grid-row: span 2; 
+}
+
+.wedding2-grid {
+    grid-column: span 3;
+    grid-row: span 2; 
+}
+
+.wedding3-grid {
+    grid-column: span 3;
+    grid-row: span 2; 
+}
+
+.wedding4-grid {
+    grid-column: span 3;
+    grid-row: span 2;
+    margin-top: -200px; 
+}
+
+.wedding5-grid {
+    grid-column: span 3;
+    grid-row: span 2;
+    margin-top: -100px; 
+}
+
+.wedding6-grid {
+    grid-column: span 3;
+    grid-row: span 2;
+    margin-top: 0px; 
+}
+
+@media screen and (max-width: 1024px) {
+    .wedding-grid {
+        --num-cols: 2;
+        --row-width: 300px;
+        --column-width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wedding-grid {
+        --num-cols: 1;
+        --row-width: 200px;
+        
+    }
+}
+
+.wedding-text h2 {
+    font-family: "Aclonica", sans-serif;
+    color: white;
+    background-color: rgba(217, 139, 176, 0.8);
+    width: 310px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    margin-top: -28%;
+    margin-left: 25%;
+}
+/*** Gallery Wediing End***/
+.makeup-text h2 {
+    font-family: "Aclonica", sans-serif;
+    color: white;
+    background-color: rgba(217, 139, 176, 0.8);
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 310px;
+}
+
+/*** Gallery Dekorasi Start***/
+.dekorasi-grid h3 {
+    font-family: "Aclonica", sans-serif;
+    color: #D98BB0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -100px;
+}
+
+.bg-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-img {
+    margin-right: 100px;
+}
+
+.item img {
+    border: 5px solid white;
+}
+
+/*** Gallery Dekorasi End***/
+
+/***Footer start***/
+.footer-area {
+    background: #D98BB0;
+    width: 100%;
+  }
+
+.row {
+    align-items: center;
+    width: auto;
+}
+
+.footer-logo img{
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-head {
+    width: fit-content;
+}
+
+.footer-icons {
+    width: fit-content;
+}
+
+.footer-icons ul{
+    position: relative;
+    width: fit-content;
+    top:2%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.footer-icons ul li {
+    list-style-type: none;
+}
+
+.footer-icons ul li a{
+    position: relative;
+    width:40px;
+    height:40px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+.footer-icons ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+}
+
+.footer-icons ul li a .fab {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(40px - 12px);
+    font-size:16px;
+    color: #262626;
+    transition: .5s;
+  }
+
+.footer-icons ul li a:hover .fab {
+    color: #D98BB0;
+  }
+
+.footer-menu a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 8px;
+    outline: none;
+    position: relative;
+}
+
+.footer-menu a:hover {
+    color: #1A1618 !important;
+}
+
+.btn-footer {
+    background: #fff;
+    color: #1A1618;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-img img{
+    width: 150px;
+}
+
+.text-bawah {
+    text-align: center;
+    background-color: #D98BB0;
+}
+
+.text-bawah p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+/***Footer END***/
