@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    width: 1280 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/*** Form Content ***/
+.form-row {
+    width: 490px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    background-color: white;
+    color: #1A1618;
+    display: grid;
+    place-items: center;
+    margin-left: 110px;
+}
+
+.text h5 {
+    color: #1A1618;
+    font-weight: 600;
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.text img {
+    width: 105px;
+    margin-top: 30px;
+}
+
+.text p {
+    color: #1A1618;
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.form-label {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+input[type=text] {
+    width: 340px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color: #1A1618;
+    font-size: 14px;
+}
+
+input[type=password] {
+    display: inline-block;
+    position: relative;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color: #1A1618;
+    font-size: 14px;
+    width: 340px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin-top: -18px;
+}
+
+.form-select {
+    font-family: "Montserrat", sans-serif;
+} 
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: white;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+.lupa-pw {
+    font-family: "Montserrat", sans-serif;
+    color: #017AFF;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.lupa-pw:hover {
+    color: #D98BB0;
+}
+
+a.btn {
+    width: 340px;
+    height: 37px;
+    background-color: #D98BB0;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px 50px;
+    margin-top: 15px;
+}
+
+a.btn:hover {
+    background-color: #FBE2EC;
+    color: #1A1618;
+}
+
+.form-label p{
+    color: #1A1618;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin-top: 15px;
+    width: 340px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-label p a {
+    color: #017AFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.form-label p a:hover {
+    color: #D98BB0;
+}
+/*** Form END ***/
+
+/*** IMG Content ***/
+.foto {
+    width: 513px;
+    height: 598px;
+}
