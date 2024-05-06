@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home- Suci Rias</title>
+    <title>Register- Suci Rias</title>
 
     <!-- template css -->
-    <link rel="stylesheet" href="<?= base_url('assets/user/'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/user/'); ?>css\register.css">
 
     <!-- link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -41,26 +41,28 @@
                     <img src="<?= base_url('assets/user/'); ?>img\logo\logo black.svg" alt="">
                 </div>
 
-                <form>
+                <form method="post" action="<?= base_url(('auth/registrasi')); ?>">
                     <div class="form-label">
                         <div class="form-group">
                             <label for="email">Email</label><br>
-                            <input type="text" placeholder="Masukan email Anda" name="email" required>
+                            <input type="text" placeholder="Masukan email Anda" name="email">
+                            <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                         </div>
                         <div class="form-group">
                             <label for="username">Username</label><br>
-                            <input type="text" placeholder="Buat nama pengguna Anda" name="username" required>
+                            <input type="text" placeholder="Buat nama pengguna Anda" name="username">
+                            <?= form_error('username', '<small class="text-danger pl-3">', '</small>'); ?>
                         </div>
                         <div class="form-group d-grid">
                             <label for="pw">Password</label><br>
-                            <input type="password" placeholder="Masukan password" id="password1" name="password1" required>
+                            <input type="password" placeholder="Masukan password" id="password1" name="password1">
                         </div>
                         <div class="form-group d-grid">
                             <label for="pw-repeat">Ulangi Password</label><br>
-                            <input type="password" placeholder="Masukan ulang password" id="password2" name="password2" required>
+                            <input type="password" placeholder="Masukan ulang password" id="password2" name="password2">
                         </div>
-                        <a type="submit" class="btn" href="login.html">Daftar</a>
-                        <p>Sudah punya akun? <a href="login.html">Login sekarang</a></p>
+                        <a type="submit" class="btn" href="<?= base_url('auth/login'); ?>">Daftar</a>
+                        <p>Sudah punya akun? <a href="<?= base_url('auth/login'); ?>">Login sekarang</a></p>
                     </div>
                 </form>
             </div>

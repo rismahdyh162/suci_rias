@@ -37,7 +37,7 @@
     <!-- Navbar -->
     <div class="container-fluid position-relative p-0" style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
         <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
+            <a href="<?= base_url('auth/'); ?>" class="navbar-brand p-0">
                 <img src="<?= base_url('assets/user/'); ?>img\logo\logo black.svg" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -45,12 +45,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active" style="font-weight: bold;">Home</a>
-                    <a href="package.html" class="nav-item nav-link" style="font-weight: bold;">Package</a>
-                    <a href="gallery.html" class="nav-item nav-link" style="font-weight: bold;">Gallery</a>
-                    <a href="faq.html" class="nav-item nav-link" style="font-weight: bold;">FAQ</a>
+                    <a href="<?= base_url('auth/'); ?>" class="nav-item nav-link active" style="font-weight: bold;">Home</a>
+                    <a href="<?= base_url('auth/package'); ?>" class="nav-item nav-link" style="font-weight: bold;">Package</a>
+                    <a href="<?= base_url('auth/galeri'); ?>" class="nav-item nav-link" style="font-weight: bold;">Gallery</a>
+                    <a href="<?= base_url('auth/faq'); ?>" class="nav-item nav-link" style="font-weight: bold;">FAQ</a>
                 </div>
-                <a href="login.html" class="btn btn-dark text-white py-2 px-4 flex-wrap flex-sm-shrink-0" style="font-weight: bold;">Login</a>
+                <a href="<?= base_url('auth/login'); ?>" class="btn btn-dark text-white py-2 px-4 flex-wrap flex-sm-shrink-0" style="font-weight: bold;">Login</a>
             </div>
         </nav>
     </div>
@@ -59,10 +59,10 @@
     <!-- Landing Page -->
     <div class="landing_section">
         <div class="row">
-            <div class="img-shadow p-0"><img src="img\img-home2.png" alt="" style="
+            <div class="img-shadow p-0"><img src="<?= base_url('assets/user/'); ?>img\img-home2.png" alt="" style="
                     z-index: -100;"></div>
             <div class="col-md-4">
-                <div class="img-box"><img src="img\img-home1.png" alt=""></div>
+                <div class="img-box"><img src="<?= base_url('assets/user/'); ?>img\img-home1.png" alt=""></div>
             </div>
         </div>
         <div class="col-md-7">
@@ -70,7 +70,7 @@
                 <h2>RIAS PENGANTIN SUCI</h2>
                 <p><em>Selamat datang</em>, kami adalah penyedia layanan lengkap untuk persiapan pernikahan. Dengan pengalaman bertahun-tahun dalam industri ini, Kami siap membantu mewujudkan impian pernikahan Anda menjadi kenyataan.</p>
                 <div class="promo-rectangle">
-                    <a class="promo-text" href="package.html" style="color: #D1373F;"><img src="img\icon-promo.png" alt="icon-promo">Dapatkan Promo Spesial Sekarang!</a>
+                    <a class="promo-text" href="<?= base_url('auth/package'); ?>" style="color: #D1373F;"><img src="<?= base_url('assets/user/'); ?>img\icon-promo.png" alt="icon-promo">Dapatkan Promo Spesial Sekarang!</a>
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@
                     <div class="about-move">
                         <div class="services-details">
                             <div class="single-services">
-                                <img class="services-icon" src="img\wedding-icon.png" alt="">
+                                <img class="services-icon" src="<?= base_url('assets/user/'); ?>img\wedding-icon.png" alt="">
                                 <h4>Paket Lengkap Pernikahan</h4>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
                     <div class="about-move">
                         <div class="services-details">
                             <div class="single-services">
-                                <img class="services-icon" src="img\kebaya-icon.png" alt="">
+                                <img class="services-icon" src="<?= base_url('assets/user/'); ?>img\kebaya-icon.png" alt="">
                                 <h4>Penyewaan Kebaya</h4>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                     <div class="about-move">
                         <div class="services-details">
                             <div class="single-services">
-                                <img class="services-icon overflow-hidden" src="img\dekorasi-icon.png" alt="">
+                                <img class="services-icon overflow-hidden" src="<?= base_url('assets/user/'); ?>img\dekorasi-icon.png" alt="">
                                 <h4>Dekorasi Pernikahan <br>& Lamaran</h4>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                     <div class="about-move">
                         <div class="services-details">
                             <div class="single-services">
-                                <img class="services-icon" src="img\alatprasmanan-icon.png" alt="">
+                                <img class="services-icon" src="<?= base_url('assets/user/'); ?>img\alatprasmanan-icon.png" alt="">
                                 <h4>Penyewaan Alat Prasmanan</h4>
                             </div>
                         </div>
@@ -150,7 +150,7 @@
                     <div class="about-move">
                         <div class="services-details">
                             <div class="single-services">
-                                <img class="services-icon" src="img\makeup-icon.png" alt="">
+                                <img class="services-icon" src="<?= base_url('assets/user/'); ?>img\makeup-icon.png" alt="">
                                 <h4>Jasa Makeup</h4>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
             <div class="col-lg-4">
                 <div class="text-start mx-auto mb-10 wow slideInLeft" data-wow-delay="0.1s">
                     <h2 style="margin-left: 100px;">Pilih Paket <br>Pernikahan <br> Impian Anda</h2>
-                    <a href="package.html" class="btn-see" style="margin-left: 100px;">Lihat semua<i id="icon-arrow" class='fas fa-arrow-right' style="margin-left: 10px;"></i></a>
+                    <a href="<?= base_url('auth/package'); ?>" class="btn-see" style="margin-left: 100px;">Lihat semua<i id="icon-arrow" class='fas fa-arrow-right' style="margin-left: 10px;"></i></a>
                 </div>
             </div>
             <div class="col-lg-6 text-start wow slideInRight" data-wow-delay="0.1s">
@@ -179,7 +179,7 @@
                         <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="property-item rounded overflow-hidden" style="margin-right: 25px;">
                                 <div class="position-relative overflow-hidden">
-                                    <a href="#"><img class="img-fluid" src="img\Package\pengantin 2.jpg" alt=""></a>
+                                    <a href="#"><img class="img-fluid" src="<?= base_url('assets/user/'); ?>img\Package\pengantin 2.jpg" alt=""></a>
                                     <div class="btn-rank position-absolute start-0 top-0 m-0 py-2 px-3">1</div>
                                     <div class="text-primary position-absolute start-0 bottom-0 fadeInLeft-0">
                                         <div class="text-item mx-auto wow slideInLeft">
@@ -189,7 +189,7 @@
                                         <div class="text-primary text-lg-end wow slideInRight">
                                             <ul class="nav nav-pills d-inline-flex justify-content-end">
                                                 <li class="nav-item me-2">
-                                                    <a class="icon-paket" href="pesanan.html"><i style='font-size:14' class='fas'>&#xf218;</i></a>
+                                                    <a class="icon-paket" href="<?= base_url('auth/pesanan'); ?>"><i style='font-size:14' class='fas'>&#xf218;</i></a>
                                                 </li>
                                                 <li class="nav-item me-2">
                                                     <div class="item-down" id="headingOne">
@@ -212,7 +212,7 @@
                         <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="property-item rounded overflow-hidden" style="margin-right: 25px;">
                                 <div class="position-relative overflow-hidden">
-                                    <a href="#"><img class="img-fluid" src="img/Package/pengantin 6.jpg" alt=""></a>
+                                    <a href="#"><img class="img-fluid" src="<?= base_url('assets/user/'); ?>img/Package/pengantin 6.jpg" alt=""></a>
                                     <div class="btn-rank position-absolute start-0 top-0 m-0 py-2 px-3">2</div>
                                     <div class="text-primary position-absolute start-0 bottom-0 fadeInLeft-0">
                                         <div class="text-item mx-auto wow slideInLeft">
@@ -222,7 +222,7 @@
                                         <div class="text-primary text-lg-end wow slideInRight">
                                             <ul class="nav nav-pills d-inline-flex justify-content-end">
                                                 <li class="nav-item me-2">
-                                                    <a class="icon-paket" href="pesanan.html"><i style='font-size:14' class='fas'>&#xf218;</i></a>
+                                                    <a class="icon-paket" href="<?= base_url('auth/pesanan'); ?>"><i style='font-size:14' class='fas'>&#xf218;</i></a>
                                                 </li>
                                                 <li class="nav-item me-2">
                                                     <div class="item-down" id="headingTwo">
@@ -245,7 +245,7 @@
                         <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="property-item rounded overflow-hidden" style="margin-right: 25px;">
                                 <div class="position-relative overflow-hidden">
-                                    <a href="#"><img class="img-fluid" src="img\Package\pengantin 4.JPG" alt=""></a>
+                                    <a href="#"><img class="img-fluid" src="<?= base_url('assets/user/'); ?>img\Package\pengantin 4.JPG" alt=""></a>
                                     <div class="btn-rank position-absolute start-0 top-0 m-0 py-2 px-3">3</div>
                                     <div class="text-primary position-absolute start-0 bottom-0 fadeInLeft-0">
                                         <div class="text-item mx-auto wow slideInLeft">
@@ -255,7 +255,7 @@
                                         <div class="text-primary text-lg-end wow slideInRight">
                                             <ul class="nav nav-pills d-inline-flex justify-content-end">
                                                 <li class="nav-item me-2">
-                                                    <a class="icon-paket" href="pesanan.html"><i style='font-size:14' class='fas'>&#xf218;</i></a>
+                                                    <a class="icon-paket" href="<?= base_url('auth/pesanan'); ?>"><i style='font-size:14' class='fas'>&#xf218;</i></a>
                                                 </li>
                                                 <li class="nav-item me-2">
                                                     <div class="item-down" id="headingThree">
@@ -292,7 +292,7 @@
             <div class="owl-carousel testimoni-carousel wow fadeInUp" data-wow-delay="0.6s">
                 <div class="testimoni-item bg-FBE2EC my-4">
                     <div class="d-flex align-items-center border-bottom pt-4 pb-4 px-5">
-                        <img class="pp rounded-5" src="img\pp-1.jpg" alt="" style="width: 60px;">
+                        <img class="pp rounded-5" src="<?= base_url('assets/user/'); ?>img\pp-1.jpg" alt="" style="width: 60px;">
                         <div class="ps-4">
                             <h6 class="username mb-1">username</h6>
                             <small class="ket-uppercase">Harga Terjangkau</small>
@@ -312,7 +312,7 @@
 
                 <div class="testimoni-item bg-FBE2EC my-4">
                     <div class="d-flex align-items-center border-bottom pt-4 pb-4 px-5">
-                        <img class="pp rounded-5" src="img\pp-1.jpg" alt="" style="width: 60px;">
+                        <img class="pp rounded-5" src="<?= base_url('assets/user/'); ?>img\pp-1.jpg" alt="" style="width: 60px;">
                         <div class="ps-4">
                             <h6 class="username mb-1">username</h6>
                             <small class="ket-uppercase">Harga Terjangkau</small>
@@ -332,7 +332,7 @@
 
                 <div class="testimoni-item bg-FBE2EC my-4">
                     <div class="d-flex align-items-center border-bottom pt-4 pb-4 px-5">
-                        <img class="pp rounded-5" src="img\pp-1.jpg" alt="" style="width: 60px;">
+                        <img class="pp rounded-5" src="<?= base_url('assets/user/'); ?>img\pp-1.jpg" alt="" style="width: 60px;">
                         <div class="ps-4">
                             <h6 class="username mb-1">username</h6>
                             <small class="ket-uppercase">Harga Terjangkau</small>
@@ -352,7 +352,7 @@
 
                 <div class="testimoni-item bg-FBE2EC my-4">
                     <div class="d-flex align-items-center border-bottom pt-4 pb-4 px-5">
-                        <img class="pp rounded-5" src="img\pp-1.jpg" alt="" style="width: 60px;">
+                        <img class="pp rounded-5" src="<?= base_url('assets/user/'); ?>img\pp-1.jpg" alt="" style="width: 60px;">
                         <div class="ps-4">
                             <h6 class="username mb-1">username</h6>
                             <small class="ket-uppercase">Harga Terjangkau</small>
@@ -372,7 +372,7 @@
 
                 <div class="testimoni-item bg-FBE2EC my-4">
                     <div class="d-flex align-items-center border-bottom pt-4 pb-4 px-5">
-                        <img class="pp rounded-5" src="img\pp-1.jpg" alt="" style="width: 60px;">
+                        <img class="pp rounded-5" src="<?= base_url('assets/user/'); ?>img\pp-1.jpg" alt="" style="width: 60px;">
                         <div class="ps-4">
                             <h6 class="username mb-1">username</h6>
                             <small class="ket-uppercase">Harga Terjangkau</small>
@@ -435,10 +435,10 @@
                     <div class="footer-content">
                         <div class="footer-head">
                             <div class="footer-menu d-grid">
-                                <a href="index.html">Home</a>
-                                <a href="package.html">Package</a>
-                                <a href="gallery.html">Gallery</a>
-                                <a href="faq.html">FAQ</a>
+                                <a href="<?= base_url('auth/'); ?>">Home</a>
+                                <a href="<?= base_url('auth/package'); ?>">Package</a>
+                                <a href="<?= base_url('auth/galeri'); ?>">Gallery</a>
+                                <a href="<?= base_url('auth/faq'); ?>">FAQ</a>
                             </div>
                         </div>
                     </div>
@@ -470,7 +470,7 @@
 
     <!-- link js libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="<?= base_url('assets/user/'); ?>https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="<?= base_url('assets/user/'); ?>lib/wow/wow.min.js"></script>
     <script src="<?= base_url('assets/user/'); ?>lib/easing/easing.min.js"></script>
     <script src="<?= base_url('assets/user/'); ?>lib/waypoints/waypoints.min.js"></script>
